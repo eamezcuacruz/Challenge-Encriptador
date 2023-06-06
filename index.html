@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ONE | Construye un encriptador de texto con Javascript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section class="seccion-textarea">
+            <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el texto aqui" onkeypress="return soloLetras(event)"></textarea>
+        
+            <div>
+                <h6 class="texto-mensaje">&#x24D8; Solo letras minúsculas y sin acentos</h6>
+            </div>
+        
+                
+                <div class="botones">
+                    <button class="btn-encriptar" onclick ="btnEncriptar()">Encriptar!</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar!</button>
+                </div>
+            </section>
+        
+    
+        <section class="seccion-mensaje">            
+                <textarea id="miInput" class="texto-codigo" name="" cols="20" rows="10" placeholder="" readonly="readonly"></textarea> 
+                
+                <div>
+                    <button id="miBoton" class="copiar-texto">Copiar</button>
+                </div>
+        </section>
+    </main>
+
+	<script src="js/index.js"></script>
+
+</body>
+</html>
